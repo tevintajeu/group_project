@@ -83,6 +83,7 @@ class Layout
                                                 </ul>
                                             </li> -->
                                             <li><a href="contactus.php">Contact</a></li>
+                                            <li><a href="sign_in.php">Sign in</a></li>
                                         </ul>
                                     </nav><!-- .navbar -->
 
@@ -1124,6 +1125,49 @@ class Layout
   
 
           <?php }
+
+public function sign_in()
+{
+    ?>
+                <!-- ======= Book A Table Section ======= -->
+                <section id="book-a-table" class="book-a-table">
+                  <div class="container" data-aos="fade-up">
+
+                    <div class="section-header">
+                      <h2>Sign in</h2>
+                      <p>Enter <span>Your Details</span> Below</p>
+                    </div>
+
+                    <div class="row g-0">
+
+                      <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+
+                      <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+                        <form action="forms/signing_in.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+                          <div class="row gy-4">
+
+                            <div class="col-lg-4 col-md-6">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                              <div class="validate"></div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                              <input type="text" class="form-control" name="password" id="password" placeholder="Your Password" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                              <div class="validate"></div>
+                            </div>
+                          <div class="mb-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Sign in successful!</div>
+                          </div>
+                          <div class="text-center"><button type="submit">Sign in</button></div>
+                        </form>
+                      </div><!-- End sign in Form -->
+
+                    </div>
+
+                  </div>
+                </section><!-- End Book A Table Section -->
+        <?php }
 
 
     public function footer_section()
