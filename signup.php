@@ -86,7 +86,7 @@
 
   <main id="main">
     <!-- Signup Form -->
-    <form>
+    <form id="signup-form" method="post">
   <!-- Signup Form -->
 <section class="signup-section">
   <div class="container" data-aos="fade-up">
