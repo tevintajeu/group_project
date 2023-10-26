@@ -1337,6 +1337,67 @@ section {
   }
 }
 
+
+/*--------------------------------------------------------------
+# Signup Section
+--------------------------------------------------------------*/
+.custom-signup-section {
+  background: #f4f4f4;
+  padding: 30px;
+  height: 100%;
+}
+
+.custom-signup-section .form-group {
+  padding: 20px 0;
+}
+
+.custom-signup-section label {
+  font-size: 20px;
+  color: #6c757d;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.custom-signup-section input[type="text"],
+.custom-signup-section input[type="email"],
+.custom-signup-section input[type="password"] {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  width: 100%;
+  padding: 12px;
+}
+
+.custom-signup-section input[type="text"]:focus,
+.custom-signup-section input[type="email"]:focus,
+.custom-signup-section input[type="password"]:focus {
+  border-color: var(--color-primary);
+}
+
+.custom-signup-section small {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.custom-signup-section button[type="submit"] {
+  background: var(--color-primary);
+  border: 0;
+  padding: 12px 40px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.custom-signup-section button[type="submit"]:hover {
+  background: #ec2727;
+}
+
+
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
