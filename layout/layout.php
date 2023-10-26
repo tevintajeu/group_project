@@ -254,7 +254,7 @@ class Layout
     <!-- Signup Form -->
     <form>
   <!-- Signup Form -->
-<section class="signup-section">
+  <section class="signup-section">
   <div class="container" data-aos="fade-up">
     <h2>Sign Up</h2>
     <form id="signup-form" method="post" action="signup_process.php">
