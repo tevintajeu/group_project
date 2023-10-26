@@ -251,41 +251,38 @@ class Layout
                         public function signup_section(){
                           ?>
                           <main id="main">
-    <!-- Signup Form -->
-    <form>
   <!-- Signup Form -->
   <section class="signup-section">
-  <div class="container" data-aos="fade-up">
-    <h2>Sign Up</h2>
-    <form id="signup-form" method="post" action="signup_process.php">
-      <div class="form-group">
-        <label for="full-name">Full Name</label>
-        <input type="text" id="full-name" name="full-name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="text" id="phone" name="phone" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Create Password</label>
-        <input type="password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" required>
-        <small>Password must contain at least one letter, one number, one special character, and be at least 6 characters long.</small>
-      </div>
-      <div class="form-group">
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" id="confirm-password" name="confirm-password" required>
-      </div>
-      <button type="submit" class="btn-signup">Sign Up</button>
-    </form>
-  </div>
-</section>
+    <div class="container" data-aos="fade-up">
+      <h2>Sign Up</h2>
+      <form id="signup-form" method="post" action="signup_process.php">
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Create Password</label>
+          <input type="password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" required>
+          <small>Password must contain at least one letter, one number, one special character, and be at least 6 characters long.</small>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit" class="btn-signup">Sign Up</button>
+      </form>
+    </div>
+  </section>
+</main>
 
-</form>
-  </main>
                        <?php }
 
     public function stats_counter()
