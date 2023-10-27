@@ -22,7 +22,7 @@ CREATE DATABASE recipe;
 DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `user` (
+CREATE TABLE IF NOT EXISTS `user` (
   `userId` bigint NOT NULL AUTO_INCREMENT,
   `username` varchar(50) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
   `email_address` varchar(50) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
