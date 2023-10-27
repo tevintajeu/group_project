@@ -252,35 +252,56 @@ class Layout
                           ?>
                           <main id="main">
   <!-- Signup Form -->
-  <section class="signup-section">
-    <div class="container" data-aos="fade-up">
+  <section class="book-a-table">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
       <h2>Sign Up</h2>
-      <form id="signup-form" method="post" action="signup_process.php">
-        <div class="form-group">
-          <label for="full-name">Full Name</label>
-          <input type="text" id="full-name" name="full-name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="text" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-          <label for="password">Create Password</label>
-          <input type="password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" required>
-          <small>Password must contain at least one letter, one number, one special character, and be at least 6 characters long.</small>
-        </div>
-        <div class="form-group">
-          <label for="confirm-password">Confirm Password</label>
-          <input type="password" id="confirm-password" name="confirm-password" required>
-        </div>
-        <button type="submit" class="btn-signup">Sign Up</button>
-      </form>
+      <p>Enter <span>Your Details</span> Below</p>
     </div>
-  </section>
+
+    <div class="row g-0">
+
+      <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+
+      <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+        <form id="signup-form" method="post" action="signup_process.php" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+
+            <div class="col-lg-6 col-md-6">
+              <label for="full-name">Full Name</label>
+              <input type="text" class="form-control" name="full-name" id="full-name" placeholder="Your Full Name" required>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <label for="phone">Phone Number</label>
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone Number" required>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <label for="password">Create Password</label>
+              <input type="password" class="form-control" name="password" id="password" placeholder="Create a Password" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" required>
+              <small>Password must contain at least one letter, one number, one special character, and be at least 6 characters long.</small>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" class="form-control" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Sign up successful!</div>
+            </div>
+            <div class="text-center"><button type="submit">Sign Up</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
                        <?php }
