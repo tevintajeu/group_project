@@ -248,48 +248,40 @@ class Layout
 
                               <?php }
 
-  public function signup_section()
-  {
-    ?>
-                                      <main id="main">
-              <!-- Signup Form -->
-              <section class="signup-section">
-                <?php
-                  if (session_status() == PHP_SESSION_NONE) {
-                    session_start();
-
-                  }
-                  ?> 
-                <div class="container" data-aos="fade-up">
-                  <h2>Sign Up</h2>
-                  <form id="signup-form" method="post" action="./globals/send_mail.php">
-                    <div class="form-group"> 
-                      <label for="full-name">Full Name</label>
-                      <input type="text" id="full-name" name="full-name" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email Address</label>
-                      <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="phone">Phone Number</label>
-                      <input type="text" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="password">Create Password</label>
-                      <input type="password" id="password" name="password"  required>
-                      <small>Password must contain at least one letter, one number, one special character, and be at least 6 characters long.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="confirm-password">Confirm Password</label>
-                      <input type="password" id="confirm-password" name="confirm-password" required>
-                    </div>
-                    <button type="submit" class="btn-signup">Sign Up</button>
-
-                      </form>
-                </div>
-              </section>
-            </main>
+                        public function signup_section(){
+                          ?>
+                          <main id="main">
+  <!-- Signup Form -->
+  <section class="signup-section">
+    <div class="container" data-aos="fade-up">
+      <h2>Sign Up</h2>
+      <form id="signup-form" method="post" action="signup_process.php">
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Create Password</label>
+          <input type="password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" required>
+          <small>Password must contain at least one letter, one number, one special character, and be at least 6 characters long.</small>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit" class="btn-signup">Sign Up</button>
+      </form>
+    </div>
+  </section>
+</main>
 
                              <?php }
 
@@ -468,10 +460,10 @@ class Layout
                                   <?php }
 
 
-  public function breakfast_menu()
-  {
-    ?>
-                                                    <div class="tab-pane fade" id="menu-breakfast">
+    public function breakfast_menu()
+    {
+        ?>
+                                        <div class="tab-pane fade" id="menu-breakfast">
 
                                                         <div class="tab-header text-center">
                                                             <p>Menu</p>
@@ -1101,9 +1093,9 @@ class Layout
                                       <p>Need Help? <span>Contact Us</span></p>
                                     </div>
 
-                                    <div class="mb-3">
-                                      <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-                                    </div><!-- End Google Maps -->
+                        <div class="mb-3">
+                          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+                        </div><!-- End Google Maps -->
 
                                     <div class="row gy-4">
 
