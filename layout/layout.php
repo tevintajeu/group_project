@@ -281,9 +281,9 @@ class Layout
               <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone Number" required>
             </div>
             <div class="col-lg-6 col-md-6">
-              <label for="password">Create Password</label>
-              <input type="password" class="form-control" name="password" id="password" placeholder="Create a Password" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" required>
-              <small>Password must contain at least one letter, one number, one special character, and be at least 6 characters long.</small>
+            <label for="password">Create Password</label>
+  <input type="password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" required>
+  <small id="password-error" class="error-message">Password must contain at least one letter, one number, one special character, and be at least 6 characters long.</small>
             </div>
             <div class="col-lg-6 col-md-6">
               <label for="confirm-password">Confirm Password</label>
