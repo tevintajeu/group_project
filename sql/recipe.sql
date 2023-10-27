@@ -18,7 +18,7 @@
 --
 -- Table structure for table `user`
 --
-CREATE DATABASE recipe;
+CREATE DATABASE IF NOT EXISTS recipe;
 DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
