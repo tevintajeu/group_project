@@ -265,7 +265,7 @@ public function signup_section(){
 <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
 <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-<form id="signup-form" method="post" action="signup_process.php" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+<form id="signup-form" method="post" action="globals/send_mail.php" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
 <div class="row gy-4">
 
 <div class="col-lg-6 col-md-6">
