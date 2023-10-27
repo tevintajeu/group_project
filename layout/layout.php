@@ -252,11 +252,21 @@ class Layout
                           ?>
                           <main id="main">
   <!-- Signup Form -->
-  <section class="signup-section">
+  <section id="book-a-table" class="book-a-table">
     <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
       <h2>Sign Up</h2>
+
+      <div class="row g-0">
+
+<div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+
+<div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+
       <form id="signup-form" method="post" action="signup_process.php">
-        <div class="form-group">
+        <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
           <label for="full-name">Full Name</label>
           <input type="text" id="full-name" name="full-name" required>
         </div>
@@ -277,7 +287,7 @@ class Layout
           <label for="confirm-password">Confirm Password</label>
           <input type="password" id="confirm-password" name="confirm-password" required>
         </div>
-        <button type="submit" class="btn-signup">Sign Up</button>
+        <div class="text-center"><button type="submit">Sign Up</button></div>
       </form>
     </div>
   </section>
